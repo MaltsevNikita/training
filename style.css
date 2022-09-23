@@ -1,5 +1,5 @@
 .site{
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .greeting{
   margin-bottom: 30px;
@@ -19,6 +19,12 @@
   text-align: center;
   display: inline-flex;
   margin-left: 10px;
-  max-width: 3vw;
-  font-size: 16px;
+  max-width: 5vw;
+  font-size: 14px;
+
+}
+@media screen and (max-width: 600px) {
+.repeat{
+  display: block;
+}
 }
