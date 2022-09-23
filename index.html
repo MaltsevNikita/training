@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Program</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div id="app">
+        <h1 class="greeting">{{ message }}</h1>
+        <div class="site d-flex">
+          <div class="leftSide">
+            <!-- <h2>{{label}}</h2> -->
+            <button v-on:click=" counter++ " class="btn btn-success">
+              + 1 подход
+            </button>
+            <button v-on:click="reset" class="btn btn-danger">Сброс</button>
+
+            <h2>Отжимания: {{ counter * step_pushUp }}</h2>
+            <h2>Присед: {{ counter * step_squad }}</h2>
+            <h2>Икроножные: {{ counter * step_calf }}</h2>
+            <h2>Спина: {{ counter * step_back }}</h2>
+          </div>
+          <div class="rightSide">
+            <h2 class="rightSide__title">Повторения</h2>
+            <!-- ====================================Блок с количеством повторений -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

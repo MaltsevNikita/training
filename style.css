@@ -1,0 +1,21 @@
+.site{
+  justify-content: space-between;
+}
+.greeting{
+  margin-bottom: 30px;
+}
+.rightSide, .rightSide{
+  display: flex;
+  flex-direction: column;
+}
+.rightSide__title{
+  padding-bottom: 30px;
+}
+.repeat-block{
+  display: inline-flex;
+}
+.repeat{
+  margin-left: 10px;
+  max-width: 3vw;
+  font-size: 16px;
+}
