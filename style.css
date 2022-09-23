@@ -13,8 +13,11 @@
 }
 .repeat-block{
   display: inline-flex;
+  flex-direction: column;
 }
 .repeat{
+  text-align: center;
+  display: inline-flex;
   margin-left: 10px;
   max-width: 3vw;
   font-size: 16px;
